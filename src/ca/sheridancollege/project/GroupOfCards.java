@@ -1,4 +1,4 @@
-package deliverable;
+package ca.sheridancollege.project;
 
 /**
  * A GroupOfCards object holds an array to contain its cards

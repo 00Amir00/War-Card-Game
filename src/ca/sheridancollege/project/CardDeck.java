@@ -1,4 +1,4 @@
-package deliverable;
+package ca.sheridancollege.project;
 
 /**
  * The job of creating the 52 cards is relegated to a private method fill that

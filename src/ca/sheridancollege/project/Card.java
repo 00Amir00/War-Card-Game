@@ -1,4 +1,4 @@
-package deliverable;
+package ca.sheridancollege.project;
 
 /**
  * A Card object is defined by its value (or rank) and its suit.

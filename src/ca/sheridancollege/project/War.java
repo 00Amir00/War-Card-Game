@@ -1,4 +1,4 @@
-package deliverable;
+package ca.sheridancollege.project;
 
 /**
  *
