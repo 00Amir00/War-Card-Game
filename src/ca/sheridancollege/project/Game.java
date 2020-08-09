@@ -2,12 +2,15 @@ package ca.sheridancollege.project;
 
 /**
  *
+ * In this class player will play together till we have a winner
+ *
  * @author Mustafa Shubbar, 2020
  * @author Melih Eren Arslan, 2020
  * @author Amirmahdi Ghasemi, 2020
  */
 class Game {
 
+    // Play method where players play with each other
     void play() {
         CardDeck cd = new CardDeck();
         cd.shuffle();
@@ -73,13 +76,12 @@ class Game {
         }
     }
 
+    // enoughCards method which return a boolean and takes in an int
     boolean enoughCards(int n) {
-        if (p1.numCards() < n || p2.numCards() < n) {
-            return false;
-        }
-        return true;
+        return !(p1.numCards() < n || p2.numCards() < n);
     }
 
+    // getWinner method where the program will determine the winner
     Player getWinner() {
         if (p1.numCards() > p2.numCards()) {
             return p1;

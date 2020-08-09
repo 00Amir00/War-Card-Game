@@ -9,19 +9,22 @@ package ca.sheridancollege.project;
  */
 public class Card implements Comparable {
 
+    // Default constructor with 2 argument
     Card(int r, int s) {
         rank = r;
         suit = s;
     }
 
+    // getRank method which returns an int
     int getRank() {
         return rank;
     }
-
+    
+   // getSuit method which returns an int
     int getSuit() {
         return suit;
     }
-
+    // CompareTo mehtod which returns an int
     @Override
     public int compareTo(Object ob) {
         Card other = (Card) ob;
@@ -35,7 +38,8 @@ public class Card implements Comparable {
         }
         return thisRank - otherRank;
     }
-
+    
+    // equals method which returns a boolean
     @Override
     public boolean equals(Object ob) {
         if (ob instanceof Card) {
@@ -46,6 +50,8 @@ public class Card implements Comparable {
         }
     }
 
+    // toString method which returns a String
+    @Override
     public String toString() {
         String val;
         String[] suitList

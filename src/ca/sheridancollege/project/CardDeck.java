@@ -10,11 +10,14 @@ package ca.sheridancollege.project;
  */
 public class CardDeck {
 
+    // Default constructor
     CardDeck() {
+        // Variable fields
         deck = new Card[52];
         fill();
     }
 
+    // Shuffle method which shuffle the cards
     void shuffle() {
         for (int next = 0; next < numCards - 1; next++) {
             int r = myRandom(next, numCards - 1);
@@ -32,10 +35,12 @@ public class CardDeck {
         return deck[numCards];
     }
 
+    // getSize method which returns an int
     int getSize() {
         return numCards;
     }
 
+    // The method that generates the cards
     private void fill() {
         int index = 0;
         for (int r = 1; r <= 13; r++) {
@@ -47,6 +52,7 @@ public class CardDeck {
         numCards = 52;
     }
 
+    // myRandom method which has 2 arguments and return an int
     private static int myRandom(int low, int high) {
         return (int) ((high + 1 - low) * Math.random() + low);
     }
